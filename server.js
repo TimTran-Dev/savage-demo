@@ -5,10 +5,10 @@ const MongoClient = require('mongodb').MongoClient
 
 var db, collection;
 
-const url = "mongodb+srv://demo:demo@cluster0-q2ojb.mongodb.net/test?retryWrites=true";
-const dbName = "demo";
+const url = "mongodb+srv://SavageComplete:demo@cluster0-zusvu.mongodb.net/test?retryWrites=true&w=majority";
+const dbName = "SirSavage";
 
-app.listen(3000, () => {
+app.listen(8000, () => {
     MongoClient.connect(url, { useNewUrlParser: true }, (error, client) => {
         if(error) {
             throw error;
